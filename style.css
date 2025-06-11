@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+header{
+    width: 100%;
+    padding: 0;
+    background: solid cornflowerblue;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px, 100px;
+}
+.perfil {
+    background: white;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: tramsform 0.5s ease, box-shadow 0.5s ease;
+}
+.perfil img{
+   width: 100px;
+   height: 100px;
+   border: radius 50px; ;
+   object-fit: cover;
+   margin-bottom: 10px;
+}
+.perfil:hover{
+ transform: translateY(50px);
+ box-shadow: 0 4px 12px rgb(0, 0, rgb(255, 0, 204));
+}
+.perfil button{
+    margin-top: 10px;
+    background: blue;
+    color: bisque;
+}
+.button:hover{
+transform: rotateX(50px);
+}

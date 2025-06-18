@@ -42,7 +42,7 @@ header{
  transform: translateY(-50px);
  box-shadow: 0 4px 12px rgb(255, 0, 238);
 }
-.perfil button{
+.perfil button,button{
     margin-top: 10px;
     background: rgb(222, 89, 7);
     color: bisque;
@@ -53,4 +53,66 @@ header{
 .perfil button:hover{
     transition: transform 1s ease;
 transform: rotate(150deg);
+}
+.contenedor {
+  margin: top 360px; ;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.imagen-circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.parrafos p {
+  margin-bottom: 5px;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+.botones button {
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.imagenes-inferiores {
+  display: flex;
+  gap: 10px;
+}
+
+.imagenes-inferiores img {
+.imagenes-inferiores {
+  display: flex;
+  gap: 10px;
+}
+}
+
+.imagenes-inferiores img {
+  width: 30px;
+  height: 30px;
+   border-radius: 50px; 
+}
+#imagenes-chicas{
+    height: 30px; 
+    width: 30px;
+   
+}
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 90px;
 }

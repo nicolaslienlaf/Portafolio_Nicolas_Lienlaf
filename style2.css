@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 section {
 padding-top: 4vh;
 height: 96vh;
@@ -5,7 +9,7 @@ margin: 0 10rem;
 box-sizing: border-box;
 min-height: fit-content;
 text-align: center;
-background-color: rgba(245,205,123,0.75);
+background-color: rgba(0, 0, 0, 0.75);
 }
 .section-container {
 display: flex;
@@ -24,6 +28,7 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 text-align: center;
+color:aliceblue;
 }
 .icon{
     display: flex;
@@ -46,4 +51,5 @@ text-align: center;
 }
 .experience-sub-title{
     background-color: aquamarine;
+    color: black;
 }

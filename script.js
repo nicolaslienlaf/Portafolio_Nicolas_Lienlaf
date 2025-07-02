@@ -1,6 +1,6 @@
 function irADevilMayCry()
 {
-window.location.href ="pagina2.html";
+window.location.href ="informacion.html";
 }
 function Home()
 {

@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 section {
 padding-top: 4vh;
@@ -9,7 +10,7 @@ margin: 0 10rem;
 box-sizing: border-box;
 min-height: fit-content;
 text-align: center;
-background-color: rgba(0, 0, 0, 0.75);
+
 }
 .section-container {
 display: flex;

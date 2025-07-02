@@ -10,7 +10,7 @@ margin: 0 10rem;
 box-sizing: border-box;
 min-height: fit-content;
 text-align: center;
-
+background-color: rgba(0, 0, 0, 0.509);
 }
 .section-container {
 display: flex;

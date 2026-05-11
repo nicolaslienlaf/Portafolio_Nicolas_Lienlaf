@@ -198,4 +198,7 @@ button:hover {
         text-align: center;
     }
 }
+.proyecto-bloque:nth-child(even) {
+    flex-direction: row-reverse;
+}
   

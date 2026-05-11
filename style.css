@@ -1,11 +1,10 @@
-/* Paleta de colores para descanso visual */
 :root {
-    --bg-dark: #1a1e23;        /* Gris azulado profundo */
-    --card-bg: #24292e;        /* Gris un poco más claro */
-    --accent: #f1c40f;         /* Amarillo/Dorado suave */
-    --text-white: #e1e4e8;     /* Blanco grisáceo */
-    --text-dim: #959da5;       /* Gris para textos secundarios */
-    --code-bg: #0d1117;        /* Negro para bloques de código */
+    --bg-dark: #1a1e23;
+    --card-bg: #24292e;
+    --accent: #f1c40f;
+    --text-white: #e1e4e8;
+    --text-dim: #959da5;
+    --code-bg: #0d1117;
 }
 
 * {
@@ -56,7 +55,6 @@ nav {
 h1 { color: var(--accent); }
 h2 { text-align: center; margin: 40px 0; color: var(--accent); }
 
-/* SECCIÓN HERO */
 .hero-section {
     display: flex;
     justify-content: center;
@@ -98,32 +96,28 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    background: #d4ac0d; /* Un poco más oscuro al pasar el mouse */
+    background: #d4ac0d;
 }
 
-/* --- ANIMACIÓN ICONO LINKEDIN --- */
 .imagenes-inferiores img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     margin-top: 10px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Transición suave */
+    transition: all 0.3s ease;
 }
 
-/* Efecto al pasar el mouse por encima */
 .imagenes-inferiores img:hover {
     transform: translateY(-3px) scale(1.1);
     filter: brightness(1.2);
 }
 
-/* Feedback visual al hacer CLICK (Sombreado Amarillo) */
 .imagenes-inferiores img:active {
-    transform: scale(0.9); /* Efecto de hundimiento */
-    box-shadow: 0 0 15px 5px var(--accent); /* Resplandor usando tu color amarillo */
+    transform: scale(0.9);
+    box-shadow: 0 0 15px 5px var(--accent);
 }
 
-/* CARRUSEL ICONOS (Software) */
 .carrusel-iconos {
     display: flex;
     justify-content: center;
@@ -144,61 +138,64 @@ button:hover {
     transform: translateY(-5px);
 }
 
-/* CARRUSEL SCRIPTS */
-.card-script {
+.seccion-proyectos {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.proyecto-bloque {
+    display: flex;
+    align-items: center;
+    gap: 40px;
     background: var(--card-bg);
-    border-radius: 12px;
-    padding: 25px;
-    max-width: 900px;
-    margin: 0 auto 50px auto;
-    border-bottom: 4px solid var(--accent);
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 6px solid var(--accent);
+    transition: transform 0.3s ease;
 }
 
-pre {
-    background: var(--code-bg);
-    padding: 15px;
-    border-radius: 8px;
-    color: #a5d6ff;
-    font-family: 'Consolas', monospace;
-    overflow-x: auto;
-    height: 250px;
+.proyecto-bloque:hover {
+    transform: translateX(10px);
 }
 
-.gif-gameplay {
+.proyecto-media {
+    flex: 1;
+}
+
+.proyecto-media img {
     width: 100%;
-    height: 250px;
-    border-radius: 8px;
-    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
-/* GALERÍA MODELADO */
-.galeria-estilo-store {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding-bottom: 100px;
+.proyecto-info {
+    flex: 1.2;
 }
 
-.asset-card {
-    background: var(--card-bg);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s;
+.proyecto-info h3 {
+    color: var(--accent);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-.asset-card:hover {
-    transform: translateY(-10px);
+.proyecto-info p {
+    color: var(--text-white);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: left;
 }
 
-.asset-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+@media (max-width: 850px) {
+    .proyecto-bloque {
+        flex-direction: column;
+        text-align: center;
+    }
+    .proyecto-info h3, .proyecto-info p {
+        text-align: center;
+    }
 }
-
-.asset-info {
-    padding: 10px;
-    font-size: 0.9rem;
-    text-align: center;
-    border-top: 1px solid #30363d;
-}
+  

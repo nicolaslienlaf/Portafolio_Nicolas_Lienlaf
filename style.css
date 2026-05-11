@@ -3,8 +3,6 @@
     --card-bg: #24292e;
     --accent: #f1c40f;
     --text-white: #e1e4e8;
-    --text-dim: #959da5;
-    --code-bg: #0d1117;
 }
 
 * {
@@ -53,7 +51,7 @@ nav {
 }
 
 h1 { color: var(--accent); }
-h2 { text-align: center; margin: 40px 0; color: var(--accent); }
+h2 { text-align: center; margin: 40px 0; color: var(--accent); font-size: 2.2rem; }
 
 .hero-section {
     display: flex;
@@ -156,6 +154,10 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
+.proyecto-bloque:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 .proyecto-bloque:hover {
     transform: translateX(10px);
 }
@@ -190,7 +192,7 @@ button:hover {
 }
 
 @media (max-width: 850px) {
-    .proyecto-bloque {
+    .proyecto-bloque, .proyecto-bloque:nth-child(even) {
         flex-direction: column;
         text-align: center;
     }
@@ -198,7 +200,3 @@ button:hover {
         text-align: center;
     }
 }
-.proyecto-bloque:nth-child(even) {
-    flex-direction: row-reverse;
-}
-  

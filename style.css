@@ -1,11 +1,11 @@
 /* Paleta de colores para descanso visual */
 :root {
-    --bg-dark: #1a1e23;       /* Gris azulado profundo */
-    --card-bg: #24292e;       /* Gris un poco más claro */
-    --accent: #f1c40f;        /* Amarillo/Dorado suave */
-    --text-white: #e1e4e8;    /* Blanco grisáceo */
-    --text-dim: #959da5;      /* Gris para textos secundarios */
-    --code-bg: #0d1117;       /* Negro para bloques de código */
+    --bg-dark: #1a1e23;        /* Gris azulado profundo */
+    --card-bg: #24292e;        /* Gris un poco más claro */
+    --accent: #f1c40f;         /* Amarillo/Dorado suave */
+    --text-white: #e1e4e8;     /* Blanco grisáceo */
+    --text-dim: #959da5;       /* Gris para textos secundarios */
+    --code-bg: #0d1117;        /* Negro para bloques de código */
 }
 
 * {
@@ -56,7 +56,7 @@ nav {
 h1 { color: var(--accent); }
 h2 { text-align: center; margin: 40px 0; color: var(--accent); }
 
-/* SECCIÓN HERO (Tu información actual) */
+/* SECCIÓN HERO */
 .hero-section {
     display: flex;
     justify-content: center;
@@ -93,21 +93,37 @@ button {
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background 0.3s;
 }
 
 button:hover {
     transform: scale(1.05);
+    background: #d4ac0d; /* Un poco más oscuro al pasar el mouse */
 }
 
+/* --- ANIMACIÓN ICONO LINKEDIN --- */
 .imagenes-inferiores img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave */
 }
 
-/* 1. CARRUSEL ICONOS */
+/* Efecto al pasar el mouse por encima */
+.imagenes-inferiores img:hover {
+    transform: translateY(-3px) scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Feedback visual al hacer CLICK (Sombreado Amarillo) */
+.imagenes-inferiores img:active {
+    transform: scale(0.9); /* Efecto de hundimiento */
+    box-shadow: 0 0 15px 5px var(--accent); /* Resplandor usando tu color amarillo */
+}
+
+/* CARRUSEL ICONOS (Software) */
 .carrusel-iconos {
     display: flex;
     justify-content: center;
@@ -119,7 +135,7 @@ button:hover {
 .item-icono img {
     width: 70px;
     height: 70px;
-    transition: filter 0.3s;
+    transition: all 0.3s ease;
     filter: grayscale(30%);
 }
 
@@ -128,7 +144,7 @@ button:hover {
     transform: translateY(-5px);
 }
 
-/* 2. CARRUSEL SCRIPTS */
+/* CARRUSEL SCRIPTS */
 .card-script {
     background: var(--card-bg);
     border-radius: 12px;
@@ -136,12 +152,6 @@ button:hover {
     max-width: 900px;
     margin: 0 auto 50px auto;
     border-bottom: 4px solid var(--accent);
-}
-
-.script-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
 }
 
 pre {
@@ -161,11 +171,7 @@ pre {
     object-fit: cover;
 }
 
-.explicacion-texto {
-    margin-top: 20px;
-}
-
-/* 3. GALERÍA MODELADO (Asset Store Style) */
+/* GALERÍA MODELADO */
 .galeria-estilo-store {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

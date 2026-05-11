@@ -19,7 +19,6 @@
     </header>
 
     <main class="contenedor-principal">
-        <!-- SECCIÓN PERFIL SUPERIOR -->
         <section class="hero-section">
             <div class="izquierda">
                 <img src="https://i.pinimg.com/736x/c7/84/97/c78497c19efc6813a1eb077c0ceccd28.jpg" alt="Nicolás Lienlaf" class="imagen-circular">
@@ -35,20 +34,16 @@
                     <button>Contacto</button>
                 </div>
                 <div class="imagenes-inferiores">
-                <a href="https://www.linkedin.com/in/nicolas-lienlaf-jimenez-998369356/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icono-social">
-                </a>
-                
-                <img src="https://elmercurio.com.mx/wp-content/uploads/2025/05/tralalero-tralala.jpg" alt="Icono 2">
+                    <a href="https://www.linkedin.com/in/nicolas-lienlaf-jimenez-998369356/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icono-social">
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- 1. CARRUSEL DE SOFTWARE (Solo Iconos) -->
         <section class="seccion-carrusel">
             <h2>Herramientas y Software</h2>
             <div class="carrusel-iconos">
-                <!-- Aquí van tus iconos -->
                 <div class="item-icono"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Blender"></div>
                 <div class="item-icono"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg" alt="Unity"></div>
                 <div class="item-icono"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop"></div>
@@ -56,51 +51,26 @@
             </div>
         </section>
 
-        <!-- 2. CARRUSEL DE SCRIPTS Y GAMEPLAY -->
         <section id="proyectos" class="seccion-proyectos">
-            <h2>Lógica y Desarrollo (Scripts)</h2>
-            <div class="carrusel-scripts">
-                <div class="card-script">
-                    <div class="script-header">
-                        <div class="codigo-box">
-                            <!-- PEGA TU SCRIPT AQUÍ -->
-<pre><code>
-// Ejemplo de implementacion Touch
-if (Input.touchCount > 0) {
-    Touch touch = Input.GetTouch(0);
-    MoverPersonaje(touch.position);
-}
-</code></pre>
-                        </div>
-                        <div class="gif-box">
-                            <!-- PEGA TU GIF AQUÍ -->
-                            <img src="tu_gameplay.gif" alt="Funcionamiento del Script" class="gif-gameplay">
-                        </div>
-                    </div>
-                    <div class="explicacion-texto">
-                        <h3>Implementación de Sistema de Movimiento</h3>
-                        <p>Aquí describes cómo hiciste el script, los desafíos técnicos y por qué usaste esa lógica específica.</p>
-                    </div>
+            <h2>Modelado 3D y Assets</h2>
+            <div class="proyecto-bloque">
+                <div class="proyecto-media">
+                    <img src="https://elmercurio.com.mx/wp-content/uploads/2025/05/tralalero-tralala.jpg" alt="Silla Low Poly">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Silla Low Poly Realista</h3>
+                    <p>Creación de mobiliario optimizado para motores de videojuegos. Elaborada para proyecto universitario, enfocada en el flujo de trabajo de texturizado PBR y mapeo UV eficiente en Blender.</p>
                 </div>
             </div>
-        </section>
 
-        <!-- 3. CARRUSEL MODELADO 3D (Tipo Asset Store) -->
-        <section class="seccion-modelado">
-            <h2>Modelado 3D y Assets</h2>
-            <div class="galeria-estilo-store">
-                <!-- Repite este bloque por cada modelo -->
-                <div class="asset-card">
-                    <img src="tu_modelo_3d_1.jpg" alt="Modelo 3D">
-                    <div class="asset-info">
-                        <span>Low Poly Character</span>
-                    </div>
+            <h2>Mecánicas y Programación</h2>
+            <div class="proyecto-bloque">
+                <div class="proyecto-media">
+                    <img src="https://elmercurio.com.mx/wp-content/uploads/2025/05/tralalero-tralala.jpg" alt="Sistema de Castillo">
                 </div>
-                <div class="asset-card">
-                    <img src="tu_modelo_3d_2.jpg" alt="Escenario">
-                    <div class="asset-info">
-                        <span>Dungeon Environment</span>
-                    </div>
+                <div class="proyecto-info">
+                    <h3>Sistema de Cámara y Level Design</h3>
+                    <p>Implementación de Cinemachine en Unity para seguimiento de personaje. Diseño de nivel tipo Greyboxing para validar distancias de navegación en una fortaleza medieval.</p>
                 </div>
             </div>
         </section>
